@@ -1,5 +1,5 @@
 import * as React from "react";
-import fibCalculator from "../service/FibCalculator";
+import calculateFibAt from "../service/CalculateFibAt";
 
 class InputForm extends React.Component {
     constructor(props) {
@@ -11,23 +11,19 @@ class InputForm extends React.Component {
         };
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-
+        this.showCalculatedValue = this.showCalculatedValue.bind(this);
     }
 
     handleChange(event) {
-        let calculatedValueShown = event.target.value !== '';
         this.setState({
             inputValue: event.target.value,
-            calculatedFibValue: fibCalculator(event.target.value),
-            calculatedValueShown: calculatedValueShown
+            calculatedFibValue: calculateFibAt(event.target.value)
         });
         event.preventDefault();
     }
 
-    handleSubmit(event) {
-        console.log("submitted");
-        event.preventDefault();
+    showCalculatedValue() {
+        return this.state.inputValue !== '';
     }
 
     formValidation(event) {
@@ -36,12 +32,11 @@ class InputForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>Enter value here: <input type={"number"} value={this.state.inputValue} onChange={this.handleChange} /></label>
-                {this.state.calculatedValueShown &&
-                    <input value={this.state.calculatedFibValue} readOnly={true} />
+            <form>
+                <label>Enter value here: <input type={"number"} value={this.state.inputValue} onChange={this.handleChange} max={9999}  /></label><br/>
+                {this.showCalculatedValue() &&
+                <label>Calculated Fibonacci value: {this.state.calculatedFibValue}</label>
                 }
-                <button type={"submit"} value={"Submit"}>Submit</button>
             </form>
         );
     }
