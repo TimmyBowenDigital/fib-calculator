@@ -11,7 +11,6 @@ function App() {
               <p>Enter in an integer value into the form below and receive back the value in the fibonacci sequence corresponding to your input.</p>
               <InputForm />
           </div>
-
       </header>
     </div>
   );
