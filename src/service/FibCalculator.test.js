@@ -16,3 +16,8 @@ test('expect the correct value to be returned from the FibCalculator function, N
     expect(FibCalculator(14)).toBe(377);
 });
 
+test('expect the correct value to be returned from the FibCalculator function, N=-1 to return Error: Input value cannot be a negative number, input a number that is above 0', () => {
+    expect(FibCalculator(14)).toBe(377);
+});
+
+

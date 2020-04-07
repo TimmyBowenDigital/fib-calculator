@@ -1,5 +1,5 @@
 import * as React from "react";
-import fibCalculator from "../../scripts/FibCalculator";
+import fibCalculator from "../service/FibCalculator";
 
 class InputForm extends React.Component {
     constructor(props) {
@@ -28,6 +28,10 @@ class InputForm extends React.Component {
     handleSubmit(event) {
         console.log("submitted");
         event.preventDefault();
+    }
+
+    formValidation(event) {
+
     }
 
     render() {
