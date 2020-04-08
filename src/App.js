@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <div>
+          <div className={"App-Form"}>
               <h1>Fibonacci Calculator</h1>
-              <p>Enter in an integer value into the form below and receive back the value in the fibonacci sequence corresponding to your input.</p>
+              <p>Enter an integer into the form below to calculate the corresponding value in the fibonacci sequence.</p>
               <InputForm />
           </div>
       </header>
