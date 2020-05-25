@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fib-calculator/precache-manifest.855ff514dbc380fe6a0b444ff4881853.js"
+  "/fib-calculator/precache-manifest.a6c1a325757b02e8ebd94fa272961e25.js"
 );
 
 self.addEventListener('message', (event) => {
