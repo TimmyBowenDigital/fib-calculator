@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fib-calculator/static/css/main.d0c18be7.chunk.css",
+    "main.js": "/fib-calculator/static/js/main.fa1a5f38.chunk.js",
+    "main.js.map": "/fib-calculator/static/js/main.fa1a5f38.chunk.js.map",
+    "runtime-main.js": "/fib-calculator/static/js/runtime-main.7fe4560c.js",
+    "runtime-main.js.map": "/fib-calculator/static/js/runtime-main.7fe4560c.js.map",
+    "static/js/2.cb70bdbe.chunk.js": "/fib-calculator/static/js/2.cb70bdbe.chunk.js",
+    "static/js/2.cb70bdbe.chunk.js.map": "/fib-calculator/static/js/2.cb70bdbe.chunk.js.map",
+    "index.html": "/fib-calculator/index.html",
+    "precache-manifest.855ff514dbc380fe6a0b444ff4881853.js": "/fib-calculator/precache-manifest.855ff514dbc380fe6a0b444ff4881853.js",
+    "service-worker.js": "/fib-calculator/service-worker.js",
+    "static/css/main.d0c18be7.chunk.css.map": "/fib-calculator/static/css/main.d0c18be7.chunk.css.map",
+    "static/js/2.cb70bdbe.chunk.js.LICENSE.txt": "/fib-calculator/static/js/2.cb70bdbe.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7fe4560c.js",
+    "static/js/2.cb70bdbe.chunk.js",
+    "static/css/main.d0c18be7.chunk.css",
+    "static/js/main.fa1a5f38.chunk.js"
+  ]
+}
